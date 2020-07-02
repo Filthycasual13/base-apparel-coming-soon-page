@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 :root {
     --Desaturated-Red: hsl(0, 36%, 70%);
@@ -8,10 +9,92 @@
     - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
 }
 
-.attribution { 
-    font-size: 11px; text-align: center;
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    max-height: 625px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 150px 100px;
+    width: 400px;
+}
+
+.logo {
+    padding-bottom: 100px;
+}
+
+#coming-soon {
+    width: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+#coming-soon > span {
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--Desaturated-Red);
+}
+
+#textbox {
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 20px;
+    padding: 13px 0 13px 20px;
+}
+
+#textbox:focus {
+    outline: none;
+    border-color: #ff6868;
+}
+
+#textbox::placeholder {
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--Desaturated-Red);
+}
+
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-submit {
+    position: absolute;
+    left: 460px;
+    top: 459px;
+    width: 80px;
+    height: 44px;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 10px 5px 0px rgb(206, 151, 151, 0.3);
+}
+
+.btn-submit:hover {
+    background-image: linear-gradient(135deg, hsl(0, 65%, 92%), hsl(0, 78%, 85%));
+    box-shadow: 0px 10px 5px 0px rgb(206, 151, 151, 0.4);
+}
+
+#right > img {
+    width: 530px;
+    height: 625px;
 }
